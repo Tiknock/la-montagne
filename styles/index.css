@@ -48,7 +48,6 @@ h1, h2 {
 
 h1 {
   font-size: 5rem;
-  width: 50%;
 }
 @media screen and (max-width: 800px) {
   h1 {
@@ -61,14 +60,19 @@ p {
   line-height: 1.4rem;
 }
 
+header {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .presentation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: rgb(240, 242, 244);
-  margin: 180px auto 70px;
-  padding: 70px 0 120px;
   text-align: center;
 }
 .presentation p {
@@ -310,6 +314,11 @@ nav li {
   border-left: 1px solid rgb(171, 171, 171);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-list {
+    border: none;
+  }
 }
 .contact .contact-list div {
   padding: 0 50px;
